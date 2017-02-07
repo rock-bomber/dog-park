@@ -60,6 +60,7 @@
     </sprites>
     <sprite>sprites\spr_transition</sprite>
     <sprite>sprites\spr_dot</sprite>
+    <sprite>sprites\spr_hole1</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="grass set 1">
@@ -90,6 +91,7 @@
       <background>background\g4_4</background>
       <background>background\g4_5</background>
       <background>background\g4_6</background>
+      <background>background\t_hole1</background>
     </backgrounds>
     <backgrounds name="flower patches">
       <background>background\f1_1</background>
@@ -103,6 +105,7 @@
     <background>background\bg_fence16</background>
     <background>background\bg_grass32</background>
     <background>background\bg_title1</background>
+    <background>background\background31</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -140,6 +143,7 @@
       <object>objects\obj_tree3</object>
       <object>objects\obj_tree4</object>
       <object>objects\obj_part_leaf1</object>
+      <object>objects\obj_hole1</object>
     </objects>
     <objects name="doggos">
       <object>objects\obj_pom</object>
