@@ -1,4 +1,5 @@
-// Game Resolution
+/// Game Resolution
+//used in OBJECTS: camera, transition_control
 global.gameWidth = 320;
 global.gameHeight = 240;
 global.zoom = 4;

@@ -115,7 +115,6 @@
     <script>scripts\ABC_path.gml</script>
     <script>scripts\gather_to_swan.gml</script>
     <script>scripts\InitGame.gml</script>
-    <script>scripts\scr_menu.gml</script>
     <script>scripts\menu_check.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -166,7 +165,6 @@
       <object>objects\obj_menu_exit</object>
       <object>objects\obj_menu_select</object>
     </objects>
-    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>

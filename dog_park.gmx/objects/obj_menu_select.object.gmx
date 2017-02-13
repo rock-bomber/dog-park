@@ -92,18 +92,7 @@ if (keyboard_check(vk_enter)){
         game_end();
         }
     }
-    
-/*if (mouse_check_button_pressed(mb_left)){
-    if (place_meeting(x, y, obj_menu_start)){
-        room_goto(rando_room);
-        }
-    if (place_meeting(x, y, obj_menu_options)){
-        room_goto(rm_options);
-        }
-    if (place_meeting(x, y, obj_menu_exit)){
-        game_end();
-        }
-    }   */ 
+
 </string>
           </argument>
         </arguments>

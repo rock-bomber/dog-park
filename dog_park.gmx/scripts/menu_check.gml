@@ -1,4 +1,5 @@
 /// menu_check();
+// used in OBJECTS: obj_menu_start, obj_menu_exit, obj_menu_objects
 image_speed = 0;
 
 

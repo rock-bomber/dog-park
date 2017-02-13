@@ -36,7 +36,6 @@ width = global.gameWidth / 32;
 height = global.gameHeight / 32;
 timer = 1;
 
-
 </string>
           </argument>
         </arguments>
@@ -70,8 +69,7 @@ if(fade){
     if (timer % 5)
     {
         if(counter &lt; width) spawn = true;
-        counter++;
-        
+        counter++;       
     }
     
     if (spawn){
@@ -90,9 +88,8 @@ if(fade){
         counter = -1;
         fade = false;
         timer = 1;
-        room_restart();
-    }
-    
+        room_goto(rando_room);
+    }    
 }
 
 </string>
