@@ -106,6 +106,7 @@
     <background>background\bg_fence16</background>
     <background>background\bg_grass32</background>
     <background>background\bg_title1</background>
+    <background>background\wip</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -172,6 +173,7 @@
       <object>objects\obj_menu_options</object>
       <object>objects\obj_menu_exit</object>
       <object>objects\obj_menu_select</object>
+      <object>objects\obj_back</object>
     </objects>
     <objects name="Scrapped Stuff">
       <object>objects\obj_silhouette</object>
