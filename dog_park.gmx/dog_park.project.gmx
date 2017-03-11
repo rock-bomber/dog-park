@@ -59,6 +59,7 @@
       <sprite>sprites\spr_menu_exit</sprite>
     </sprites>
     <sprite>sprites\spr_transition</sprite>
+    <sprite>sprites\spr_transition_l</sprite>
     <sprite>sprites\spr_dot</sprite>
     <sprite>sprites\spr_hole1</sprite>
   </sprites>
@@ -105,18 +106,25 @@
     <background>background\bg_fence16</background>
     <background>background\bg_grass32</background>
     <background>background\bg_title1</background>
-    <background>background\background31</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\move.gml</script>
     <script>scripts\grid_place_meeting.gml</script>
     <script>scripts\get_path_to_player.gml</script>
-    <script>scripts\ABC_path.gml</script>
     <script>scripts\gather_to_swan.gml</script>
     <script>scripts\InitGame.gml</script>
     <script>scripts\menu_check.gml</script>
+    <scripts name="Scrapped Stuff">
+      <script>scripts\draw_silhouette.gml</script>
+      <script>scripts\ABC_path.gml</script>
+    </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shaders name="Scrapped Stuff">
+      <shader type="GLSLES">shaders\sh_leave_gray.shader</shader>
+    </shaders>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\ft_04b03</font>
   </fonts>
@@ -165,11 +173,16 @@
       <object>objects\obj_menu_exit</object>
       <object>objects\obj_menu_select</object>
     </objects>
+    <objects name="Scrapped Stuff">
+      <object>objects\obj_silhouette</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
     <room>rooms\rando_room</room>
     <room>rooms\rm_options</room>
+    <room>rooms\test_room</room>
+    <room>rooms\room_o__stuff</room>
   </rooms>
   <constants number="5">
     <constant name="CELL_WIDTH">32</constant>

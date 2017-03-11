@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -74,8 +74,8 @@ if(fade){
     
     if (spawn){
         for(var i = 0; i &lt; height; i++){
-            xx = 32*counter;
-            yy = 32*i;
+            xx = 128*counter;
+            yy = 128*i;
             with(instance_create(0, 0, obj_transition)){
                 xx = transition_control.xx;
                 yy = transition_control.yy;
@@ -83,12 +83,12 @@ if(fade){
         }
         spawn = false;        
     }
-    
-    if(counter-30 &gt; width){
+    /// Restart the room mid-transition
+    if(counter-3 &gt; width){
         counter = -1;
         fade = false;
         timer = 1;
-        room_goto(rando_room);
+        room_restart();
     }    
 }
 

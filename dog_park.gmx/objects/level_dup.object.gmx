@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -31,9 +31,8 @@
 //////*~ Grassy Park ~*/////////
 ////////////////////////////////
 // Resize
-//room_width = (CELL_WIDTH/16) * 720;
-//room_height = (CELL_HEIGHT/16) * 720;
-
+room_width = (CELL_WIDTH/16) * 720;
+room_height = (CELL_HEIGHT/16) * 720;
 
 
 // Set grid width and height
@@ -65,7 +64,14 @@ instance_create(cx*CELL_WIDTH+CELL_WIDTH/2, cy*CELL_HEIGHT+CELL_HEIGHT/2, obj_pl
 
 
 
-
+                //testing
+               /* for (var yy = 0; yy &lt; height; yy++){
+                for (var xx = 0; xx &lt; width; xx++){
+                if (grid[# xx, yy] == FLOOR){
+                if (point_distance(ex, ex, obj_player.x, obj_player.y) &gt; 50){
+                instance_create(xx*CELL_WIDTH+CELL_WIDTH/2, yy*CELL_HEIGHT+CELL_HEIGHT/2, obj_ABC);
+                instance_create(xx*CELL_WIDTH+CELL_WIDTH/2, yy*CELL_HEIGHT+CELL_HEIGHT/2, obj_A);
+                }}}} */
                 
        
                          
@@ -280,7 +286,8 @@ for (var yy = 0; yy &lt; height; yy++){
            if(point_distance(ex, ex, obj_player.x, obj_player.y) &gt; dis2 &amp;&amp; irandom(70) == 10){
                 instance_create(ex, ey, obj_bush2);
             }            
-        }        
+        } 
+        
         else {
             mp_grid_add_cell(grid_path, xx, yy);
         }      
